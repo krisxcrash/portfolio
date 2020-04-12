@@ -1,7 +1,10 @@
 import React from "react"
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
+import Header from '../components/header'
 
-export default () => (<div>
-  <h1>Hello there!</h1>
-  <Link to="/about/">About</Link>
-  </div>)
+export default () => (
+  <div>
+    <Link to="/about/">About</Link>
+    <Header title="Hey, I'm Kris.." subTitle="I'm a UI Engineer with a passion for pixel perfection."/>
+  </div>
+)
