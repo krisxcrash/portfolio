@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Idea from '../assets/icons/idea';
 
 const Header = props => {
   const { subTitle, title } = props;
@@ -8,12 +9,20 @@ const Header = props => {
     <Container>
       <Title>{title}</Title>
       <SubTitle>{subTitle}</SubTitle>
+      <Idea width={64} height={64} color="hotpink" />
     </Container>
   )
 }
 
 const Container = styled.div`
-  width: 100vw;
+  background-color: lightsteelblue;
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+  padding: 3rem;
 `
 
 const Title = styled.h1`
