@@ -3,19 +3,20 @@ import styled from 'styled-components'
 import Idea from '../assets/icons/idea';
 
 const Header = props => {
-  const { subTitle, title } = props;
+  const { backgroundColor, color, subTitle, title } = props;
 
   return (
-    <Container>
+    <Container backgroundColor={backgroundColor} color={color}>
       <Title>{title}</Title>
       <SubTitle>{subTitle}</SubTitle>
-      <Idea width={64} height={64} color="hotpink" />
+      {/* <Idea width={64} height={64} color="hotpink" /> */}
     </Container>
   )
 }
 
 const Container = styled.div`
-  background-color: lightsteelblue;
+  background-color: ${({backgroundColor}) => backgroundColor};
+  color: ${({color}) => color};
   height: 95vh;
   background-size: cover;
   background-position: top;
