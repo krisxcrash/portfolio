@@ -5,6 +5,6 @@ import ContentContainer from "../components/contentContainer"
 export default () => (
   <ContentContainer>
     <Nav />
-    <h1>Dis' me about</h1>
-  </ContentContainer>
+    <h1>Dis' me contact</h1>
+   </ContentContainer>
 )
