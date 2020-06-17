@@ -3,12 +3,13 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const ContentBlock = props => {
-  const {backgroundColor, color, backgroundClipPath, children, height, margin, padding} = props
+  const {backgroundColor, color, backgroundImage, children, height, margin, padding} = props
   return (
     <Container
       backgroundColor={backgroundColor}
       color={color}
       margin={margin}
+      backgroundImage={backgroundImage}
     >
       {children}
     </Container>
@@ -17,7 +18,9 @@ const ContentBlock = props => {
 
 const Container = styled.div`
   background: ${({ backgroundColor }) => backgroundColor};
-  background-image: ${({ backgroundImage }) => backgroundImage};
+  background-image: url(${({ backgroundImage }) => backgroundImage});
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 70vw;
   width: 90vw;
   text-align: center;
