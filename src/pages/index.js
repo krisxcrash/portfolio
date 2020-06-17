@@ -35,10 +35,9 @@ export default () => (
         margin="0 2.5rem 0 0"
       />
       <ContentBlock
-        backgroundImage=""
+        backgroundImage={HappyMoney}
         title="Happy Money App (Coming Soon)"
         url="#"
-        backgroundColor="black"
         margin="0 0 0 2.5rem"
       />
     </Row>
@@ -47,14 +46,12 @@ export default () => (
         backgroundImage={Payoff}
         title="Payoff"
         url="https://payoff.com"
-        backgroundColor="black"
         margin="0 2.5rem 0 0"
       />
       <ContentBlock
         backgroundImage={Iherb}
         title="iHerb"
         url="https://iherb.com"
-        backgroundColor="black"
         margin="0 0 0 2.5rem"
       />
     </Row>
