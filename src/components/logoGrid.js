@@ -10,17 +10,25 @@ import JsLogo from "../assets/images/logos/JavaScript-logo.png"
 import ScssLogo from "../assets/images/logos/sass.png"
 import StyledLogo from "../assets/images/logos/styled-components.png"
 import ReactNativeLogo from "../assets/images/logos/react-native.png"
+import NodeLogo from "../assets/images/logos/node.png"
+import GraphQLLogo from "../assets/images/logos/graphql.png"
 
 const LogoGrid = props => {
   return (
     <Container>
-      <Image height={150} src={ReactNativeLogo} />
-      <Image height={150} src={ReactLogo} />
-      <Image height={150} src={JsLogo} />
-      <Image height={150} src={StyledLogo} />
-      <Image height={160} src={HtmlLogo} />
-      <Image height={150} src={CssLogo} />
-      <Image height={150} src={ScssLogo} />
+      <Row>
+        <Image height={150} src={ReactNativeLogo} />
+        <Image height={150} src={ReactLogo} />
+        <Image height={150} src={JsLogo} />
+        <Image height={180} src={NodeLogo} />
+        <Image height={150} src={GraphQLLogo} />
+      </Row>
+      <Row>
+        <Image height={150} src={StyledLogo} />
+        <Image height={170} src={HtmlLogo} />
+        <Image height={150} src={CssLogo} />
+        <Image height={150} src={ScssLogo} />
+      </Row>
     </Container>
   )
 }
@@ -29,13 +37,21 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex: 1;
+`
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
+    flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex: 1;
+    align-items: center;
+    margin-bottom: 4rem;
   }
 `
 

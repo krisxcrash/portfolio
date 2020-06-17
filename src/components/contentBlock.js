@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const ContentBlock = props => {
-  const {backgroundColor, color, backgroundImage, children, height, margin, padding} = props
+  const {backgroundColor, color, backgroundImage, children, title, margin, url} = props
   return (
     <Container
       backgroundColor={backgroundColor}
@@ -21,11 +21,12 @@ const Container = styled.div`
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   height: 70vw;
   width: 90vw;
   text-align: center;
-
   margin: 2.5rem auto;
+
   @media screen and (min-width: 1200px) {
     height: 40vw;
     max-height: 835px;
