@@ -39,26 +39,7 @@ const Header = () => {
           .
         </SubTitle>
         <SubTitle>
-          With a{" "}
-          {/* <RoughNotation
-            strokeWidth={3}
-            type="underline"
-            color="rgb(246, 89, 150)"
-            order={2}
-          > */}
-            mobile-first approach
-          {/* </RoughNotation>{" "} */}
-          to design and development I ensure a seamless user experience. I love
-          unique design challenges and executing a{" "}
-          {/* <RoughNotation
-            strokeWidth={3}
-            type="underline"
-            color="rgb(246, 89, 150)"
-            order={3}
-          > */}
-            pixel-perfect
-          {/* </RoughNotation>{" "} */}
-          {' '}user interface.
+          With a mobile-first approach to design and development I ensure a seamless user experience. I love unique design challenges and executing a pixel-perfect user interface.
         </SubTitle>
       </RoughNotationGroup>
       <DownArrow>&darr;</DownArrow>
