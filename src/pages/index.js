@@ -1,8 +1,10 @@
 import React from "react"
+
+// TODO: clean up component imports
 import Header from '../components/header'
 import ContentContainer from "../components/contentContainer"
 import Nav from "../components/nav"
-import TwoColumn from "../components/twoColumn"
+import Row from "../components/row"
 import MainImage from '../components/mainImage'
 import ContentBlock from "../components/contentBlock"
 import Title from "../components/title"
@@ -12,23 +14,23 @@ export default () => (
   <ContentContainer>
     {/* <Link to="/about/">About</Link> */}
     <Nav />
-    <TwoColumn>
+    <Row>
       <MainImage />
       <Header />
-    </TwoColumn>
-    <Title text="Tech Stack" />
-    <TwoColumn>
+    </Row>
+    <Title text="Tech Stack" delay={3500} />
+    <Row>
      <LogoGrid />
-    </TwoColumn>
-    <Title text="Recent Work" />
-    <TwoColumn>
+    </Row>
+      <Title text="Recent Work" delay={4000} />
+    <Row>
       <ContentBlock backgroundColor="black" margin="0 2.5rem 0 0" />
       <ContentBlock backgroundColor="black" margin="0 0 0 2.5rem" />
-    </TwoColumn>
-    <TwoColumn>
+    </Row>
+    <Row>
       <ContentBlock backgroundColor="black" margin="0 2.5rem 0 0" />
       <ContentBlock backgroundColor="black" margin="0 0 0 2.5rem" />
-    </TwoColumn>
+    </Row>
   </ContentContainer>
 )
 

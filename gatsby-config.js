@@ -6,13 +6,13 @@
 
 module.exports = {
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/data/`,
+    //   },
+    // },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-layout`,
     `gatsby-transformer-sharp`,

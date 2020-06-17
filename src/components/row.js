@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const TwoColumn = props => {
+const Row = props => {
   const {children} = props
   return (
     <Container>
@@ -27,4 +27,4 @@ const Container = styled.div`
 `
 
 
-export default TwoColumn
+export default Row
