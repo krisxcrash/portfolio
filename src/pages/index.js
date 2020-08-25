@@ -12,6 +12,8 @@ import LogoGrid from "../components/logoGrid"
 import HappyMoney from '../assets/images/happymoney.png'
 import Payoff from '../assets/images/payoff.png'
 import Iherb from '../assets/images/iherb.png'
+import Headline from "../components/headline"
+import Link from '../components/link'
 // import Payoff from '../assets/images/payoff.png'
 
 export default () => (
@@ -26,7 +28,18 @@ export default () => (
     <Row>
       <LogoGrid />
     </Row>
-    <Title text="Recent Work" delay={4000} />
+    <Title text="Let's Chat" delay={4000} />
+    <Row>
+      
+        <Link
+          href="mailto:kristinenicolemartin@gmail.com"
+          target="_blank"
+      >
+        <Headline text="Email me!" />
+        </Link>
+      
+    </Row>
+    {/* <Title text="Recent Work" delay={4000} />
     <Row>
       <ContentBlock
         backgroundImage={HappyMoney}
@@ -54,7 +67,7 @@ export default () => (
         url="https://iherb.com"
         margin="0 0 0 2.5rem"
       />
-    </Row>
+    </Row> */}
   </ContentContainer>
 )
 

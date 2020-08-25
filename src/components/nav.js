@@ -10,14 +10,14 @@ const Nav = props => {
         <Link to="/">Kris White</Link>
       </Name>
 
-      <LeftSide>
+      {/* <LeftSide>
         <li>
           <Link to="/about/">About</Link>
         </li>
         <li>
           <Link to="/about/">Contact</Link>
         </li>
-      </LeftSide>
+      </LeftSide> */}
     </Container>
   )
 }
