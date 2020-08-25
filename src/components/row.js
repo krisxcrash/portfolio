@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Row = props => {
-  const {children} = props
+  const {align, children} = props
   return (
-    <Container>
+    <Container align={align}>
       {children}
     </Container>
   )
@@ -20,9 +20,9 @@ const Container = styled.div`
   max-height: fit-content;
 
   @media screen and (min-width: 1200px) {
-    align-items: flex-start;
+    align-items: ${({ align }) => align || "flex-start"};
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: ${({ align }) => align || "space-between"};
   }
 `
 

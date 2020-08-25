@@ -29,15 +29,11 @@ export default () => (
       <LogoGrid />
     </Row>
     <Title text="Let's Chat" delay={4000} />
-    <Row>
-      
-        <Link
-          href="mailto:kristinenicolemartin@gmail.com"
-          target="_blank"
-      >
-        <Headline text="Email me!" />
+    <Row align="center">
+     
+        <Link href="mailto:kristinenicolemartin@gmail.com" target="_blank">
+          <Headline text="Email me!" />
         </Link>
-      
     </Row>
     {/* <Title text="Recent Work" delay={4000} />
     <Row>
