@@ -1,0 +1,43 @@
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+
+const ContentBlock = props => {
+  const {backgroundColor, color, backgroundImage, children, title, margin, url} = props
+  return (
+    <Container
+      backgroundColor={backgroundColor}
+      color={color}
+      margin={margin}
+      backgroundImage={backgroundImage}
+    >
+      {children}
+    </Container>
+  )
+}
+
+const Container = styled.div`
+  background: ${({ backgroundColor }) => backgroundColor};
+  background-image: url(${({ backgroundImage }) => backgroundImage});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70vw;
+  width: 90vw;
+  text-align: center;
+  margin: 2.5rem auto;
+
+  &::before {
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 40vw;
+    max-height: 835px;
+    width: 50vw;
+    margin: ${({ margin }) => margin};
+  }
+`
+
+
+export default ContentBlock
