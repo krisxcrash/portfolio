@@ -7,7 +7,7 @@ const Image = props => {
 }
 
 const StyledImage = styled.img`
-  height: ${({ height }) => height+50}px;
+  height: ${({ height }) => height-40}px;
   width: auto;
   margin: 10px auto;
 

@@ -62,7 +62,11 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 1.5rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
 `
 
 const TitleWrapper = styled.div`
@@ -88,30 +92,19 @@ const StyledLine = styled.div`
     max-width: 700px;
     width: 30vw;
   }
-
 `
 
 const SubTitle = styled.h3`
-  font-size: 3rem;
+  font-size: 1.8rem;
 
   @media screen and (min-width: 768px) {
     font-size: 3.95rem;
+    margin-bottom: 15px;
   }
 `
 
 const DownArrow = styled.p`
   font-size: 8rem;
-
-`
-
-const StyledA = styled.a`
-  color: rgb(246, 89, 150);
-  text-decoration: none;
-
-  &:hover {
-    color: rgb(120, 211, 255);
-    text-transform: uppercase;
-  }
 `
 
 export default Header

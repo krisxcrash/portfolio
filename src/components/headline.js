@@ -9,9 +9,13 @@ const Headline = props => {
 }
 
 const StyledHeadline = styled.h1`
-  font-size: 3rem;
+  color: ${({ color }) => color || '#000'};
+  font-size: 2rem;
   text-align: center;
-  color: ${({color}) => color || '#000'}
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
 `
 
 export default Headline

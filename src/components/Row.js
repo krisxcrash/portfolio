@@ -15,7 +15,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4vh auto;
+  margin: 2vh auto;
   height: 100%;
   max-height: fit-content;
 
@@ -24,6 +24,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: ${({ align }) => align || "space-between"};
   }
+  margin: 4vh auto;
 `
 
 

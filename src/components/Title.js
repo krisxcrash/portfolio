@@ -30,9 +30,14 @@ const Title = props => {
 }
 
 const StyledH2 = styled.h2`
-  font-size: 5rem;
+font-size: 2.5rem;
   text-align: center;
-  margin: 10rem auto 5rem;
+  margin: 4rem auto 2rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 5rem;
+    margin: 10rem auto 5rem;
+  }
 `
 
 export default Title

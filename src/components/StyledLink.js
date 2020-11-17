@@ -19,6 +19,7 @@ const StyledA = styled.a`
   color: rgb(246,89,150);
   width: 150px;
 
+  @media screen and (min-width: 1200px) {
   &::before {
     content: ${({text}) => `"${text}"`};
     position: absolute;
@@ -33,9 +34,9 @@ const StyledA = styled.a`
      text-decoration: underline
   }
 
-&:hover::before {
-  width: 100%;
- 
+  &:hover::before {
+    width: 100%;
+  }
 }
 `
 

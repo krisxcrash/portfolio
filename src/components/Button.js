@@ -31,7 +31,7 @@ const StyledA = styled.a`
   color: rgb(246,89,150);
   display: flex;
   flex-wrap: nowrap;
-  font-size: 30px;
+  font-size: 1.5rem;
   height: 65px;
   justify-content: center;
   padding: 15px;
@@ -101,6 +101,10 @@ const StyledA = styled.a`
   &:hover {
     color: rgb(120, 211, 255);
     transition-delay: 0.2s;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
   }
 `
 export default Button

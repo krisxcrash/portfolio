@@ -8,7 +8,7 @@ import HappyMoney from '../assets/images/happymoney.png'
 import Payoff from '../assets/images/payoff.png'
 import Iherb from '../assets/images/iherb.png'
 import Hma from '../assets/images/hma.png'
-import Objects from '../assets/images/objects.jpg'
+import Objects from '../assets/images/objects.png'
 import Password from './Password'
 
 
@@ -35,19 +35,20 @@ const [error, setError] = useState(false)
   const renderProjects = () => {
     return (
       <>
-        <Title text='Just a few of the projects I have worked on' delay="200"/>
+        <Title text='Recent Work' delay="200"/>
         <Row>
           <ContentBlock
             backgroundImage={HappyMoney}
             title="Happy Money"
             url="https://happymoney.com"
             margin="0 2.5rem 0 0"
+            content="Built using React, Styled Components, Prismic CMS, GraphQL, Gatsby, and deployed via Netlify"
           />
           <ContentBlock
             backgroundImage={Objects}
-            title="Objects by Happy Money"
-            url="#"
+            title={`Objects \nby Happy Money`}
             margin="0 0 0 2.5rem"
+            content="Built using React, Styled Components, Storybook, and deployed via Netlify"
           />
         </Row>
         <Row>
@@ -56,12 +57,14 @@ const [error, setError] = useState(false)
             title="Payoff"
             url="https://payoff.com"
             margin="0 2.5rem 0 0"
+            content="Built using React, Bootstrap, Styled Components, Ruby on Rails, and JavaScript"
           />
           <ContentBlock
             backgroundImage={Iherb}
             title="iHerb"
             url="https://iherb.com"
             margin="0 0 0 2.5rem"
+            content="Built using MVC pattern in C# with HTML, SCSS, Bootstrap, and jQuery"
           />
         </Row>
         {/* <Row>
