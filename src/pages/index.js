@@ -1,19 +1,18 @@
 import React from "react"
 
 // TODO: clean up component imports
-import Header from '../components/header'
-import ContentContainer from "../components/contentContainer"
-import Nav from "../components/nav"
-import Row from "../components/row"
-import MainImage from '../components/mainImage'
-import ContentBlock from "../components/contentBlock"
-import Title from "../components/title"
-import LogoGrid from "../components/logoGrid"
-import HappyMoney from '../assets/images/happymoney.png'
-import Payoff from '../assets/images/payoff.png'
-import Iherb from '../assets/images/iherb.png'
-import Headline from "../components/headline"
-import Link from '../components/link'
+import Header from '../components/Header'
+import ContentContainer from "../components/ContentContainer"
+import Nav from "../components/Nav"
+import Row from "../components/Row"
+import MainImage from '../components/MainImage'
+import Title from "../components/Title"
+import LogoGrid from "../components/LogoGrid"
+
+import Headline from "../components/Headline"
+import Button from "../components/Button"
+import { Link } from "gatsby"
+
 // import Payoff from '../assets/images/payoff.png'
 
 export default () => (
@@ -28,42 +27,26 @@ export default () => (
     <Row>
       <LogoGrid />
     </Row>
-    <Title text="Let's Chat" delay={4000} />
+    
+    <Title text="Recent Work" delay={4000} />
     <Row align="center">
-     
-        <Link href="mailto:kristinenicolemartin@gmail.com" target="_blank">
-          <Headline text="Email me!" />
-        </Link>
+      <Link to="/work/">
+        <Button>
+          Check out my latest work
+          </Button>
+      </Link> 
+  </Row>
+
+   
+    <Title text="Contact" delay={5000} />
+    <Row align="center">
+      <Headline>Have an exciting project and looking for some help?</Headline>
     </Row>
-    {/* <Title text="Recent Work" delay={4000} />
-    <Row>
-      <ContentBlock
-        backgroundImage={HappyMoney}
-        title="Happy Money"
-        url="https://happymoney.com"
-        margin="0 2.5rem 0 0"
-      />
-      <ContentBlock
-        backgroundImage={HappyMoney}
-        title="Happy Money App (Coming Soon)"
-        url="#"
-        margin="0 0 0 2.5rem"
-      />
+    <Row align="center">
+      <Button href="mailto:kristinenicolemartin@gmail.com">Let's chat!</Button>
     </Row>
-    <Row>
-      <ContentBlock
-        backgroundImage={Payoff}
-        title="Payoff"
-        url="https://payoff.com"
-        margin="0 2.5rem 0 0"
-      />
-      <ContentBlock
-        backgroundImage={Iherb}
-        title="iHerb"
-        url="https://iherb.com"
-        margin="0 0 0 2.5rem"
-      />
-    </Row> */}
   </ContentContainer>
 )
 
+
+// Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

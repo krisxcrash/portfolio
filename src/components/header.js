@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components'
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import StyledLink from './StyledLink';
+
 
 const Header = () => {
   const [isShowing, updateIsShowing] = useState(false)
@@ -33,13 +35,11 @@ const Header = () => {
             UI Engineer
           </RoughNotation>{" "}
           based out of Costa Mesa and currently working for{" "}
-          <StyledA href="https://happymoney.com" target="_blank">
-            Happy Money
-          </StyledA>
+          <StyledLink href="https://happymoney.com" target="_blank" text="Happy Money" />
           .
         </SubTitle>
         <SubTitle>
-          With a mobile-first approach to design and development I ensure a seamless user experience. I love unique design challenges and executing a pixel-perfect user interface.
+          With a mobile-first approach and a focus on accessibility, I ensure a seamless experience for all users. I love unique design challenges and executing a pixel-perfect user interface.
         </SubTitle>
       </RoughNotationGroup>
       <DownArrow>&darr;</DownArrow>

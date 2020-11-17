@@ -27,6 +27,10 @@ const Container = styled.div`
   text-align: center;
   margin: 2.5rem auto;
 
+  &::before {
+    
+  }
+
   @media screen and (min-width: 1200px) {
     height: 40vw;
     max-height: 835px;

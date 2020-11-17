@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import Image from './image'
+import Image from './Image'
 
 // TODO: cleanup image imports
 import ReactLogo from "../assets/images/logos/react.png"
@@ -17,17 +17,17 @@ const LogoGrid = props => {
   return (
     <Container>
       <Row>
-        <Image height={150} src={ReactNativeLogo} />
-        <Image height={150} src={ReactLogo} />
-        <Image height={150} src={JsLogo} />
-        <Image height={180} src={NodeLogo} />
-        <Image height={150} src={GraphQLLogo} />
+        <Image height={150} src={ReactNativeLogo} alt="React Native" title="React Native" />
+        <Image height={150} src={ReactLogo} alt="React" title="React" />
+        <Image height={150} src={JsLogo} alt="JavaScript" title="JavaScript" />
+        <Image height={180} src={NodeLogo} alt="NodeJS" title="NodeJS" />
+        <Image height={150} src={GraphQLLogo} alt="GraphQL" title="GraphQL" />
       </Row>
       <Row>
-        <Image height={150} src={StyledLogo} />
-        <Image height={170} src={HtmlLogo} />
-        <Image height={150} src={CssLogo} />
-        <Image height={150} src={ScssLogo} />
+        <Image height={150} src={StyledLogo} alt="Styled Components" title="Styled Components" />
+        <Image height={170} src={HtmlLogo} alt="HTML 5" title="HTML 5" />
+        <Image height={150} src={CssLogo} alt="CSS 3" title="CSS 3" />
+        <Image height={150} src={ScssLogo} alt="SASS/SCSS" title="SASS/SCSS" />
       </Row>
     </Container>
   )
