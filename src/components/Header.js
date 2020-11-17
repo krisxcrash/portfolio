@@ -101,9 +101,15 @@ const SubTitle = styled.h3`
     font-size: 2.95rem;
     margin-bottom: 15px;
   }
+  
 
   @media screen and (min-width: 1200px) {
-    font-size: 3.25rem;
+    font-size: 3.1rem;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 3.85rem;
     margin-bottom: 15px;
   }
 `
