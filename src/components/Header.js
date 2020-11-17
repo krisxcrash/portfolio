@@ -62,9 +62,9 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 1.5rem;
+  font-size: 2rem;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 600px) {
     font-size: 3rem;
   }
 `
@@ -97,8 +97,13 @@ const StyledLine = styled.div`
 const SubTitle = styled.h3`
   font-size: 1.8rem;
 
-  @media screen and (min-width: 768px) {
-    font-size: 3.95rem;
+    @media screen and (min-width: 600px) {
+    font-size: 2.95rem;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3.25rem;
     margin-bottom: 15px;
   }
 `
