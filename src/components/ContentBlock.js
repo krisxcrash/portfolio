@@ -71,22 +71,29 @@ const Container = styled.div`
   }
 
   @media screen and (min-width: 450px) {
-    height: 350px;
+    height: 340px;
     width: 400px;
   }
 
   @media screen and (min-width: 600px) {
-    height: 500px;
+    height: 460px;
     width: 550px;
   }
 
    @media screen and (min-width: 768px) {
-    height: 515px;
+    height: 540px;
     width: 650px;
   }
 
   @media screen and (min-width: 1200px) {
     margin: ${({ margin }) => margin};
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin: ${({ margin }) => margin};
+    height: 650px;
+    width: 800px;
+
   }
 `
 
